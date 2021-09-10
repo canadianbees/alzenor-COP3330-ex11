@@ -13,6 +13,7 @@ public class Converter
     private final int euro;
     private final double rate;
 
+    //gets the number of euros and the current exchange rate from the user
     public Converter()
     {
         Scanner input = new Scanner(System.in);
@@ -24,6 +25,7 @@ public class Converter
         this.rate = input.nextDouble();
     }
 
+    //converts euros to united states dollars, prints the result
     public void Conversion()
     {
         int usDolla = (int) (this.rate * this.euro);
